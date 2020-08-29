@@ -1,0 +1,20 @@
+{
+  "name": "linkbox",
+  "version": "1.0.0",
+  "description": "Smart URL redirector",
+  "scripts": {
+    "start": "npm run build && parcel serve dist/index.html",
+    "build": "parcel build src/index.html --out-dir dist/ --public-url ./ && npm run netlify-compat",
+    "netlify-compat": "echo '/*  /index.html  200' > dist/_redirects"
+  },
+  "keywords": [],
+  "author": "Patrick Latorre",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "parcel-plugin-inliner": "^1.0.14"
+  }
+}
