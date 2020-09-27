@@ -1,6 +1,6 @@
 # 🔗📦 Linkbox
 
-Client-side only URL redirector. Supports subpath forwarding and smart matching. 
+Client-side only URL redirector. Supports subpath forwarding and fuzzy matching. 
 
 Syntax: `domain.com/<keyword>/[subpaths]`
 
